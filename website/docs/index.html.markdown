@@ -90,7 +90,7 @@ In addition to [generic `provider` arguments](https://www.terraform.io/docs/conf
 
 - `scopes` - (Optional) These are scopes for obtaining the API token in form of a comma separated list. It can also be sourced from the `OKTA_API_SCOPES` environment variable.
 
-- `private_key` - (Optional) This is the private key for obtaining the API token (can be represented by a filepath, or the key itself). It can also be sourced from the `OKTA_API_PRIVATE_KEY` environment variable.
+- `private_key` - (Optional) This is the private key for obtaining the API token (can be represented by a filepath, or the key itself). It can also be sourced from the `OKTA_API_PRIVATE_KEY` environment variable. This should be your RSA private key specified as a PEM block.
 
 - `backoff` - (Optional) Whether to use exponential back off strategy for rate limits, the default is `true`.
 
